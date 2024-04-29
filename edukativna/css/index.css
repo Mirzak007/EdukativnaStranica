@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+* {
+    text-decoration: none;
+}
+
+body {
+    background-color: #eae6dd;
+    color: #1b3838;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.8s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.slika:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.slika:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.slika:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.slika {
+    background-color: #eae6dd;
+    border-radius: 2px;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    flex: 1; /* Razmak slike */
+    order: 1;
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.vsx:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.slike {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.naslov {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.navbar {
+    background: #343746;
+    font-family: Calibri;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: #82649c;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+button a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.vsx {
+    margin-left: 30px;
+    color: white;
+    background-color: #82649c;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 60px;
+    padding: 15px 45px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 50px;
+
+}
+.p2{
+    
+        font-size: 23px;
+        line-height: 1.5;
+        margin-left: 50px;
+        font-weight: normal;
+    
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.headerslika{
+    width:1000;
+    height:500p;
+
+}
+.headerslikadiv{
+    width:1000;
+    height:500p;
+
+}
+.kompajleri{
+    width: 350px;
+    height:350px;
+}

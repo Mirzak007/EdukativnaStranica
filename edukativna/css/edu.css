@@ -1,0 +1,549 @@
+/*pekopiranih varijabli za boje od prije sto sam imao*/
+:root {
+    --bs-green: #04AA6D;
+    --bs-teal: #20c997;
+    --bs-black: #282a35;
+    --bs-pink: #FFC0C7;
+    --bs-yellow: #FFF4A3;
+    --bs-white: #ffffff;
+    --bs-neoWhite: #E7E9EB;
+    --bs-plavo: #7295df;
+    --bs-gray-active: rgb(230, 230, 230);
+    --bs-green-light: #D9EEE1;
+    --bs-pink-light: #F3ECEA;
+    --bs-blue: #96D4D4;
+    --bs-codeEditor-outside: #E7E9EB;
+    --bs-green-hover: #1cc084;
+    --bs-teal-hover: #20c997;
+    --bs-black-hover: #323542;
+    --bs-pink-hover: #f8ccd1;
+    --bs-yellow-hover: #f5ea99;
+    --bs-white-hover: #faf0f0;
+
+}
+body{
+	margin:0;
+	padding:0;
+	font-family:'Source Sans Pro', sans-serif;
+	overflow-x: hidden;
+	background-color: var(--bs-black);
+}
+header{
+	height:75px;
+	background-color:white;
+	width:100%;
+	padding: 0px 20px;
+	display:flex;
+	align-items:center;
+}
+
+/*korisno za druge stvari nez isk ostavicu ih ovako*/
+.btn{
+	padding:10px 20px;
+	cursor:pointer;
+}
+.pk{
+	font-size: 25px;
+    line-height: 1.5; 
+    margin-bottom: 20px; 
+    margin-left:50px;
+	color:white;
+
+}
+.h1k{
+	color:white;
+	font-size: 40px;
+    font-weight: bold; 
+    margin-top: 20px; 
+    margin-left:30px;
+}
+.linkbutton{
+    margin-left:30px;
+	color: white;
+	background-color: var(--bs-green);
+	font-size:18px;
+	font-weight: 600;
+	text-decoration:none;
+	border-radius:60px;
+	padding:15px 45px;
+	cursor: pointer;
+}
+.linkbutton:hover{
+	background-color: var(--bs-green-hover);
+}
+.text-white {
+    color: var(--bs-neoWhite);
+}
+section{
+	margin:0px;
+	padding:0px;
+}
+svg{
+	margin:0;
+	padding:0;
+}
+.bg-white {
+    background-color: var(--bs-white);
+    color: var(--bs-black)
+}
+
+.bg-black {
+    background-color: var(--bs-black);
+    color: var(--bs-white);
+}
+
+.bg-pink {
+    background-color: var(--bs-pink);
+    color: var(--bs-black)
+}
+
+.bg-yellow {
+    background-color: var(--bs-yellow);
+    color: var(--bs-black)
+}
+.bg-plavo {
+    background-color: var(--bs-plavo);
+    color: var(--bs-white)
+}
+
+.bg-green {
+    background-color: var(--bs-green);
+    color: var(--bs-white);
+}
+
+.bg-lightGreen {
+    background-color: var(--bs-green-light);
+    color: var(--bs-black)
+}
+
+.bg-blue {
+    background-color: var(--bs-blue);
+    color: var(--bs-black)
+}
+
+.bg-black:hover {
+    background-color: var(--bs-black-hover);
+}
+
+.bg-pink:hover {
+    background-color: var(--bs-pink-hover);
+}
+
+.bg-yellow:hover {
+    background-color: var(--bs-yellow-hover);
+}
+
+.bg-green:hover {
+    background-color: var(--bs-green-hover);
+}
+
+
+/*logo*/
+.edu-logo{
+	width:45px;
+	padding:2px 8px;
+	margin-right:5px;
+}
+.edu-logo img{
+	width:100%;
+}
+
+/*ovdje je lijevi header*/
+.header-lijevo{
+	display:flex;
+	align-items: center;
+	height:100%;
+}
+/*.header-lijevo*/ .meni-btn{
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-items:center;
+	padding:0px 23px;
+	font-size:18px;
+	font-weight:600;
+	color:#000;
+	text-decoration:none;
+	cursor: pointer;
+}
+.header-lijevo .meni-btn:hover{
+	background-color:var(--bs-green);
+	color:white;
+	cursor:pointer;
+}
+.header-lijevo_ .meni-btn:first-child{
+	padding:0;
+}
+
+.header-lijevo .meni-btn:first-child:hover{
+	background-color:transparent;
+}
+.fa-solid{
+	padding:0px 3px;
+}
+
+
+/*header desno*/
+.mijenjajsvjetlost{
+	transform:rotate(180deg);
+}
+.mijenjajsvjetlost:hover{
+	color:var(--bs-green)
+}
+.header-desno
+{
+	display: flex;
+	align-items: center;
+	justify-content:right;
+	width:100%;
+	gap:18px;
+}
+.header-desno a{
+	font-size:18px;
+	font-weight: 600;
+	text-decoration:none;
+	border-radius:60px;
+	padding:10px 20px;
+}
+.header-desno a:hover{
+	opacity:0.8;
+}
+.header-desno a:last-child{
+	margin-right:35px;
+	padding:10px 30px;
+}
+
+/*podkategorija(iskreno ne znem kako bi nazvao, mslm vidi se na stranici sta je )*/
+.podkategorija{
+	background-color:var(--bs-black);
+	color:white;
+	position: absolute;
+	padding-bottom:40px;
+	width:100%;
+}
+.podkategorija_zatvori-btn{
+	position: absolute;
+	right: 0;
+}
+.podkategorija_zatvori-btn button{
+	font-size:30px;
+	padding:30px;
+	background-color: transparent;
+	border: none;
+	color:var(--bs-white);
+	cursor:pointer;
+	border-radius: 15px;
+}
+.podkategorija_zatvori-btn:hover{
+	background-color:var(--bs-neoWhite);
+	color:var(--bs-black);
+	border-radius: 15px;
+}
+.podkategorija_sadrzaj{
+	width:80%;
+	margin:auto;
+	padding-top: 50px;
+}
+.podkategorija_sadrzaj h1{
+	margin:0;
+	color:var(--bs-yellow);
+}
+.podkategorija_sadrzaj_data{
+	display:grid;
+	grid-template-columns: repeat(4,minmax(100px,1fr));
+
+}
+.podkategorija_predmeti{
+	margin-right: 20px;
+}
+
+.podkategorija_predmeti h2{
+	color:var(--bs-yellow);
+	margin-top:30px;
+}
+.podkategorija_predmeti a{
+	display:block;
+	color: white;
+	font-size:20px;
+	font-weight: 650;
+	text-decoration: none;
+	padding: 5px 7px;
+}
+.podkategorija_predmeti a:hover{
+	background-color:var(--bs-neoWhite);
+	color:var(--bs-black)
+}
+.podkategorija_hidden{
+	display:none;
+}
+
+/*sad section ide*/
+.section_kontejner{
+	width:85%;
+	margin:auto;
+}
+.section_heading{
+	background-color: var(--bs-black);
+}
+.section_heading .section_kontejner{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 480px;
+}
+.section_heading h1{
+	font-size:50px;
+	color:white;
+	margin:0;
+}
+.section_heading p{
+	color:var(--bs-pink);
+	font-size:20px;
+	font-weight:900;
+	text-align: center;
+}
+.section_kontejner a{
+	color:white;
+	font-size:20px;
+	font-weight: 550;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.section_html{
+	position: relative;
+	top:-5px;
+	background-color:var(--bs-green-light);
+	padding:1px;
+	height:480px;
+}
+.section_lijevo{
+	padding:1px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width:500px;
+}
+.section_lijevo h1{
+	font-size:60px;
+	margin:0;
+}
+.section_lijevo p{
+	font-size:22px;
+	font-weight: 600;
+}
+.section_lijevo a{
+	width: 200px;
+	padding:10px 20px;
+	font-size:20px;
+	font-weight: 550;
+	text-decoration: none;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 50px;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+@media all and (min-width:1000px){
+	.section_lijevo h1{
+		font-size:70px;
+		margin:0;
+	}
+	.section_lijevo p{
+		font-size:22px;
+		font-weight: 550;
+	}
+	.section_html{
+		display:flex;
+		justify-content: space-around;
+		padding:40px 0px;
+		height:500px;
+	}
+	
+	.section_lijevo{
+		width:30%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.section_desno{
+		display:block;
+		width:24%;
+		height:90%;
+		background-color:var(--bs-codeEditor-outside);
+		box-shadow: -5px -5px 10px rgba(0,0,0,0.1),5px 5px 10px rgba(0,0,0,0.1);
+		border-radius:5px;
+		padding:20px;
+	
+	}
+	.editor{
+		background-color: white;
+		height:280px;
+		width: 400px;
+		max-height: 100%;
+		min-height: 100%;
+		border-left: 5px solid var(--bs-green);
+		padding:10px;
+	}
+	.editor_btn{
+		background-color: var(--bs-green);
+		color: var(--bs-white);
+		border:none;
+		font-size:18px;
+		font-weight: 500;
+		padding: 10px 30px;
+		margin-top: 20px;
+		border-radius: 50px;
+	}
+}
+
+
+
+/**dio za css izgled**/
+.section_css{
+	background-color: var(--bs-yellow);
+	position: relative;
+	top:-5px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 500px;
+	padding: 100px 0px;
+}
+
+/**dio za js izgled**/
+.section_js{
+	background-color: var(--bs-black);
+	position: relative;
+	top:-5px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 500px;
+	padding: 100px 0px;
+}
+.jsh1{
+	color: white;
+}
+.jsp{
+	color: white;
+}
+
+/**dio za sql izgled**/
+.section_sql{
+	background-color: var(--bs-blue);
+	position: relative;
+	top:-5px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 500px;
+	padding: 100px 0px;
+}
+
+/**dio za kompajler**/
+.kompajler{
+	text-align: center;
+	width:100%;
+	max-width: 900px;
+	margin: auto;
+	margin-top: 100px;
+}
+.kompajler_h1,
+.kompajler_p{
+	color: white;
+}
+.kompajler_h1{
+	font-size:40px;
+}
+.kompajler img{
+	width:700px;
+	height:400px;
+}
+
+
+/**footer dio css**/
+
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
